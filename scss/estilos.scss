@@ -1,0 +1,312 @@
+.header {
+    background-color: #008847;
+    color: white;
+    font-weight: bold;
+    padding: 40px;
+
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.menu_navegacion {
+    color:white;
+    font-weight: bold;
+    background-color: #018001;
+
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.frame {
+	text-align: center;	
+	position: relative;
+	cursor: pointer;	
+	perspective: 500px;
+    margin: 3px; 
+
+    h5 {
+        font-weight: 700;
+    }
+}
+.frame img {
+	width: 270px;
+	height: 400px;
+}
+.frame .details {
+	width: 80%;
+	height: 70%;	
+	padding: 10%;
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 67%;
+	transform: translate(-50%, -50%) rotateY(90deg);
+	transform-origin: 50%;
+	background: rgba(71, 184, 86, 0.9);	
+	opacity: 0;
+	transition: all 0.4s ease-in;
+	
+}
+.frame:hover .details {
+	transform: translate(-50%, -50%) rotateY(0deg);
+	opacity: 1;
+	color: rgba(5, 5, 5, 0.9);
+}
+
+.btns_index {
+	display: inline-block;
+	border: 2px;
+	color:#FFD687;
+	text-decoration: none;
+	padding: 5px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 25px;
+	width: 130px;
+	height: 65px;
+
+	border-radius: 15px;
+	background: linear-gradient(225deg, #00924c, #007a40);
+	box-shadow: -3px 3px 1px #00964e;
+}
+
+.inicio_triptico {
+	display: inline-block;
+}
+
+.hipervinculo {
+	color:#FFD687;
+	text-decoration: none;
+}
+
+/*---------MODAL----------*/
+.cargarNModal {
+	height: 100vh;
+	width: 220vh;
+	background-color: rgba(16, 148, 67, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	text-align: center;
+	opacity: 0;
+}
+
+.modalVisible {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modalEspaVerde {
+	background-color: white;
+	width: 1000px;
+	height: 500px;
+	border-radius: 12px;
+	text-align: center;
+	padding: 25px;
+}
+
+.borde-rojo {
+	border: solid red 2px;
+	
+}
+
+.borde-verde {
+	border: solid green 2px;
+}
+
+.centerModal {
+	text-align: center;
+}
+
+.etiquetasForm {
+	text-align: left;
+}
+
+.box {
+	width: 350px;
+	height: 40px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+}
+
+.box1 {
+	width: 250px;
+	height: 40px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+}
+
+.box2 {
+	width: 200px;
+	height: 40px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+}
+
+.menu_busqueda {
+	display: inline-block;
+}
+
+.instalaciones {
+	border: solid rgba(3, 104, 3, 0.7) 3px;
+	margin-bottom: 20px;
+	padding: 20px;
+	display: inline-block;
+}
+
+.instalaciones2 {
+	width: fit-content;
+	padding: 10px;
+	display: inline-block;
+	border-left: solid 1px rgba(160, 158, 158, 0.5);
+}
+
+.juegosB {
+	border-left: none;
+}
+
+.btnForm {
+	justify-content: center;
+
+	input {
+		width: 100px;
+		margin: 15px;
+	}
+}
+
+/*---------PARQUES----------*/
+.parques__cards--margin {
+    padding: 10px;
+    margin: 15px;
+}
+
+#nuevoEspacio {
+	justify-content: center;
+}
+
+//---PRUEBAS
+.visible {
+	background-color: rgb(92, 25, 25);
+	width: 300px;
+	height: 150px;
+	border-radius: 12px;
+	text-align: center;
+	color: white;
+	padding: 15px;
+	position: fixed;
+	z-index: 3;
+	display: block;
+	border: solid rgb(117, 117, 117) 2px;
+}
+
+.btnInstalaciones {
+	visibility: hidden;
+}
+
+.errorAlert {
+	display: none;
+}
+
+/*---------CONTACTO----------*/
+.contacto {
+	background-image: url(../imagenes/botanico.jpg);
+	background-size: cover;
+	margin: 10px;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.cardContacto {
+	background-color: rgba($color: #e2dbdb, $alpha: 0.7);
+}
+
+.form-floating {
+	.textMensaje {
+		height: 150px;
+		margin-bottom: 15px;
+	}
+}
+
+.barrioSelect {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contBtn {
+	height: 100%;
+	width: 100%;
+	background-color: rgba($color: #6da877, $alpha: 0.5);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.contactoValido {
+	height: 150px;
+	width: 250px;
+	background-color: white;
+	position: fixed;
+	top: 350px;
+	left: 675px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 15px;
+	border: solid 2px green;
+	padding: 10px;	
+}
+
+#btnContacto {
+	width: 70px;
+}
+
+#enviarBtn {
+	margin-bottom: 10px;
+}
+
+.contacBtns {
+	margin-bottom: 10px;
+	width: 150px;
+}
+
+.errorModal {
+	height: 100%;
+	width: 100%;
+	background-color: rgba($color: #dfd009, $alpha: 0.5);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.contactError {
+	height: 150px;
+	width: 250px;
+	background-color: white;
+	color: red;
+	font-weight: bold;
+	position: fixed;
+	top: 350px;
+	left: 675px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 15px;
+	border: solid 2px black;
+	padding: 10px;	
+}
